@@ -1,0 +1,10 @@
+{
+  "name": "stoyan_client",
+  "version": "0.0.0",
+  "description": "lab",
+  "author": "RomanChuhan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.12.2"
+  }
+}

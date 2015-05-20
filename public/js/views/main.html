@@ -1,0 +1,36 @@
+<div ng-controller="mainCtrl">
+	<div class="panel panel-default">
+	  <div class="panel-heading">Enter params</div>
+	  <div class="panel-body">
+	    <div class="input-group">
+	      <span class="input-group-addon" id="basic-addon1">T</span>
+	      <input type="text" ng-model="params.t" class="form-control" placeholder="Time interval" aria-describedby="basic-addon1">
+	    </div>
+	    <br>
+	    <div class="input-group">
+	      <span class="input-group-addon" id="basic-addon1">R</span>
+	      <input type="text" ng-model="params.r" class="form-control" placeholder="?" aria-describedby="basic-addon1">
+	    </div>
+	    <br>
+	    <div class="input-group">
+	      <span class="input-group-addon" id="basic-addon1">L</span>
+	      <input type="text" ng-model="params.l" class="form-control" placeholder="?" aria-describedby="basic-addon1">
+	    </div>
+	    <br>
+	    <button class="btn btn-default" type="submit" ng-click="addParams(params)">Set params</button>
+	  </div>
+	</div>
+
+	<slider ng-show="showChart" ng-model="sliderOptions.value" min="sliderOptions.min" step="sliderOptions.step" max="sliderOptions.max" on-slide="sliding(value, $event)" value="sliderOptions.value"></slider>
+
+	<br>
+	<h4>y = sin(x)*t + cos(t)</h4>
+
+	<br>
+	<br>
+
+	<flot ng-show="showChart" dataset="flotPoints" options="flotOptions" height="480px"></flot>
+
+</div>
+
+
