@@ -27,17 +27,20 @@ angular.module('angular-flot', []).directive('flot', function() {
         };
       }
       plotArea = $(element.children()[0]);
+
       var currentPoint = null;
-          plotArea.bind("plothover", function (event, pos, item) {
-              currentPoint = pos;
-          });
-          
-          plotArea.mousedown(function(event) {
-             if (currentPoint)
-             {
-                console.log(currentPoint);
-             }
-          });
+
+      plotArea.bind("plothover", function (event, pos, item) {
+          currentPoint = pos;
+      });          
+      
+      plotArea.mousedown(function(event) {
+          if (currentPoint)
+          {
+            console.log(currentPoint);
+          }
+      });
+
       plotArea.css({
         width: width,
         height: height
