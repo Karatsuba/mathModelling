@@ -1,0 +1,14 @@
+{
+  "name": "mathtag",
+  "homepage": "https://github.com/csicar/MathTag",
+  "_release": "e16dda0104",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e16dda01046ba565ab7197803f8b28a4e0ddf256"
+  },
+  "_source": "git://github.com/csicar/MathTag.git",
+  "_target": "*",
+  "_originalSource": "mathtag",
+  "_direct": true
+}

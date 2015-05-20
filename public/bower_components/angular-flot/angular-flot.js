@@ -32,14 +32,14 @@ angular.module('angular-flot', []).directive('flot', function() {
 
       plotArea.bind("plothover", function (event, pos, item) {
           currentPoint = pos;
-      });          
-      
-      plotArea.mousedown(function(event) {
-          if (currentPoint)
-          {
-            console.log(currentPoint);
-          }
       });
+
+      plotArea.mousedown(mousedownCallback);
+
+      var mousedownCallback = function () {
+        
+      };
+
 
       plotArea.css({
         width: width,

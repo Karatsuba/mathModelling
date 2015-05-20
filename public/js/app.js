@@ -2,7 +2,8 @@
     var app = angular.module('Lab', [
         'ui.router',
         'ui.bootstrap-slider',
-        'angular-flot'
+        'angular-flot',
+        'mathTag'
     ]);
 
     app.config(function($stateProvider, $urlRouterProvider) {

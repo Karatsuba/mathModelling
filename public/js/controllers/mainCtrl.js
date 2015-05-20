@@ -18,7 +18,10 @@ app.controller('mainCtrl', function($scope){
             max: 20,
             ticks: 20
         },
-        grid: { hoverable: true, clickable: true }
+        grid: { hoverable: true, clickable: true },
+        mousedownCallback: function (point) {
+            console.log(point);
+        }
     };
 
     $scope.sliderOptions = {
